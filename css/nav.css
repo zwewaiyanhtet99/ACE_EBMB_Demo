@@ -1,0 +1,187 @@
+/* Headers */
+.header-classic {
+    border-top: 2px solid #2fa7fb;
+    border-bottom: 2px solid #2fa7fb;
+    line-height: 16px;
+}
+
+/* Navigations */
+.navbar-classic.navbar {
+    padding: 10px 0px;
+}
+
+.navbar-classic.navbar *{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar-classic .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    color: #2fa7fb;
+}
+
+.navbar-classic .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+    background: #2fa7fb;
+    border-radius: 4px;
+}
+
+.navbar-classic .navbar-collapse.show .dropdown .dropdown-menu .dropdown-item {
+    border-bottom: 1px solid #f1f1f6;
+    border-radius: 0px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 11rem;
+    padding: 0px;
+    margin: 12px 0px;
+    font-size: 1rem;
+    color: #2fa7fb;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #2fa7fb;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.09);
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    clear: both;
+    font-weight: 400;
+    color: #2fa7fb;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+#setup + .dropdown-menu, #invoice + .dropdown-menu, #report + .dropdown-menu {
+    left: -7rem;
+}
+
+#clearing + .dropdown-menu{
+    left: -6rem;
+}
+
+#profile + .dropdown-menu {
+    left: -9rem;
+}
+
+@media (min-width: 992px) {
+    .dropdown .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+        -webkit-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        transition: all .3s ease-in
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #2fa7fb;
+    border-radius: 4px;
+}
+
+.navbar-classic .navbar-toggler, .navbar-boxed .navbar-toggler {
+    padding: 9px 13px;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid #eaeaf0;
+    border-radius: .25rem;
+    position: relative;
+}
+
+.navbar-classic .navbar-collapse.show .dropdown .dropdown-menu {
+    background: #fff;
+    box-shadow: none;
+    margin-top: 2px;
+    margin-left: 7px;
+}
+
+.navbar-classic .navbar-collapse.show .navbar-nav .nav-item .nav-link {
+    border-bottom: 1px solid #f1f1f6;
+    padding-left: 4px;
+}
+
+.navbar-boxed .navbar-collapse.show .navbar-nav .nav-item .nav-link {
+    border-bottom: 1px solid #f1f1f6;
+}
+
+.navbar-transparent .navbar-collapse.show .navbar-nav .nav-item .nav-link {
+    border-bottom: 1px solid #2fa7fb;
+}
+
+.icon-bar {
+    width: 21px;
+    height: 3px;
+    background-color: #2fa7fb;
+    display: block;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    margin-top: 4px;
+}
+
+.navbar-toggler:focus {
+    outline: 0px;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 190%;
+    background-color: #2fa7fb;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% -80%;
+    background-color: #2fa7fb;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+    background-color: #2fa7fb;
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+    background-color: #2fa7fb;
+}

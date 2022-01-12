@@ -1,0 +1,6 @@
+TRANSACTIONVIEWER (Corporate Transaction Viewer)
+TRANSACTIONMAKER (Corporate Transaction Maker)
+TRANSACTIONAPPROVER (Corporate Transaction Approver)
+COADMINMAKER (Corporate Admin Maker)
+COADMINAPPROVER (Corporate Admin Approver)
+MAKER (Retail Maker)

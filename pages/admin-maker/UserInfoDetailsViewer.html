@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--    <link rel="stylesheet" href="../../css/util.css">-->
+    <link rel="stylesheet" href="../../select2/select2.min.css">
+    <link rel="stylesheet" href="../../select2/select2-bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../../datepicker/gijgo.min.css">
+    <link rel="stylesheet" type="text/css" href="../../daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dataTables.bootstrap4.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="../../css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../../css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+            </div>
+            <div class="p-4 pt-5">
+                <a href="../../pages/maker/Dashboard.html"><img src="../../images/ACE LOGO WHITE.png" class="logo_image" /></a>
+                <ul class="list-unstyled components mb-5">
+                    <li>
+                        <a href="Dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="Profile.html">Profile</a>
+                    </li>
+                    <li class="active">
+                        <a href="#manageBeneficiarySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">User Management</a>
+                        <ul class="collapse list-unstyled" id="manageBeneficiarySubmenu">
+                            <li>
+                                <a href="UserInfo.html">Create User</a>
+                            </li>
+                            <li>
+                                <a href="#userListMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">User List</a>
+                                <ul class="collapse list-unstyled" id="userListMenu">
+                                    <li>
+                                        <a href="Maker.html">Maker</a>
+                                    </li>
+                                    <li>
+                                        <a href="Viewer.html">Viewer</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../RetailLogin.html">Logout</a>
+                    </li>
+                </ul>
+
+                <!--<div class="footer">
+                <p>&lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                    &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;</p>
+            </div>-->
+
+            </div>
+        </nav>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div class="container-fluid mt-2">
+                <div class="text-right mr-5" style="color: white;background: white; margin-bottom: -70px;" onclick="location.replace('../../RetailLogin.html');">
+                    <i class="fa fa-sign-out" id="logout_icon"></i>
+                </div>
+                <div class="row title-card card-stats">
+                    <div class="row" style="margin: 10px;">
+                        <h3 style="color: #fff;font-weight: 700;margin-left: 10px;padding-top: 0px;">ACE Data Systems
+                        </h3>
+                    </div>
+                </div>
+                <p>User Details</p>
+                <hr/>
+                <div class="text-left mr-5">
+                    <button class="btn btn-primary" onclick="location.replace('Viewer.html');"><i
+                        class="fas fa-arrow-left icon-spacing"></i> Back to List
+                </button>
+                </div>
+                <div class="pp-card text-center m-3 p-3">
+                    <div class="row mt-4">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Role</b>
+                        </div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">Viewer</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Full Name</b>
+                        </div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">kyawkyaw</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>User Name</b>
+                        </div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;" id="username">ACE-M001</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Staff ID</b>
+                        </div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;" id="staff_id">1731</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>NRC</b></div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">8/MaMaNa(N)090909</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Department</b>
+                        </div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">Banking</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Position</b>
+                        </div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">HR Manager</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Created
+                        User</b></div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">ACE-CM001</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Created
+                        Date</b></div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">20/4/2020</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Transaction
+                        Limit</b></div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">100,000 MMK</div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-left" style="font-weight: 700;font-size: 18px;"><b>Bulk
+                        Transaction Limit</b></div>
+                        <div class="col-md-4 col-lg-4 text-left" style="font-size: 15px;">100,000 MMK</div>
+                    </div>
+                </div>
+                <div class="container-fluid mt-5">
+                    <p> Accessable Menu</p>
+                    <hr/>
+                    <div class="mt-2">
+                        <table class="table table-bordered table-striped w-50" id="transferTable">
+                            <thead>
+                                <tr class="text-white">
+                                    <th width="6%" class="text-center">No</th>
+                                    <th class="text-center">Menu Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-right">1</td>
+                                    <td class="text-left">Remittance</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">2</td>
+                                    <td class="text-left">Transfer</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">3</td>
+                                    <td class="text-left">Topup</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">4</td>
+                                    <td class="text-left">View Remittance</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-fluid mt-5">
+                    <p> Accessable Account Number</p>
+                    <hr/>
+                    <div class="mt-2">
+                        <table class="table table-bordered table-striped w-50" id="acc">
+                            <thead>
+                                <tr class="text-white">
+                                    <th width="6%" class="text-center">No</th>
+                                    <th class="text-center">Account Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-right">1</td>
+                                    <td class="text-left">0012387916235234</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">2</td>
+                                    <td class="text-left">0390187915735833</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">3</td>
+                                    <td class="text-left">0009387922535250</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/popper.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
+
+    <script type="text/javascript" src="../../js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../js/moment.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../../js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="../../datepicker/gijgo.min.js"></script>
+    <script type="text/javascript" src="../../select2/select2.full.min.js"></script>
+    <script type="text/javascript" src="../../select2/select2.min.js"></script>
+    <script type="text/javascript" src="../../daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#dateRange').daterangepicker();
+        });
+        $('#fromAccount').select2({
+            theme: 'bootstrap4'
+        });
+        $('#toAccount').select2({
+            theme: 'bootstrap4'
+        });
+        $('#transactionType').select2({
+            theme: 'bootstrap4'
+        });
+        $('#approveStatus').select2({
+            theme: 'bootstrap4'
+        });
+
+        function goListPage() {
+            location.replace("Transfer.html");
+        }
+
+        var queryString = decodeURIComponent(window.location.search);
+        queryString = queryString.substring(1);
+        var queries = queryString.split("&");
+
+        var username = queries[1];
+        var staff_id = queries[2];
+
+        document.getElementById("username").innerHTML = username;
+        document.getElementById("staff_id").innerHTML = staff_id;
+    </script>
+</body>
+
+</html>
