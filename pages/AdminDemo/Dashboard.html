@@ -31,9 +31,9 @@
         <nav id="sidebar">
             <div class="custom-menu">
                 <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                <i class="fa fa-bars"></i>
-                <span class="sr-only">Toggle Menu</span>
-            </button>
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
             </div>
             <div class="p-4 pt-5">
                 <a href="../../pages/maker/Dashboard.html"><img src="../../images/ACE LOGO WHITE.png" class="logo_image" /></a>
@@ -41,116 +41,308 @@
                     <li>
                         <a href="Dashboard.html">Dashboard</a>
                     </li>
-                    <li>
-                        <a href="Profile.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="AccountInformation.html">Account Information</a>
+                    <li class="active">
+                        <a href="#UserSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">User</a>
+                        <ul class="collapse list-unstyled" id="UserSubMenu">
+                            <li>
+                                <a href="#">Register Retail User</a>
+                            </li>
+                            <li>
+                                <a href="#">User List</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="active">
-                        <a href="#manageBeneficiarySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manage Beneficiary</a>
-                        <ul class="collapse list-unstyled" id="manageBeneficiarySubmenu">
+                        <a href="#AdminSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Admin</a>
+                        <ul class="collapse list-unstyled" id="AdminSubMenu">
                             <li>
-                                <a href="BeneficiaryOwnBank.html">Own Bank</a>
+                                <a href="#">Create Admin User</a>
                             </li>
                             <li>
-                                <a href="BeneficiaryOtherBank.html">Other Bank</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#transactionCreationSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Transaction</a>
-                        <ul class="collapse list-unstyled" id="transactionCreationSubmenu">
-                            <li>
-                                <a href="#transferMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Transfer</a>
-                                <ul class="collapse list-unstyled" id="transferMenu">
-                                    <li><a href="OwnTransfer.html"> Own Transfer </a></li>
-                                    <li><a href="OtherTransfer.html"> Other Transfer </a></li>
-                                    <li><a href="OtherBank.html"> Other Bank </a></li>
-                                </ul>
+                                <a href="#">Admin List</a>
                             </li>
                             <li>
-                                <a href="#scheduleTransferMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Schedule Transfer</a>
-                                <ul class="collapse list-unstyled" id="scheduleTransferMenu">
-                                    <li><a href="ScheduleOwnTransfer.html"> Schedule Own Transfer </a></li>
-                                    <li><a href="ScheduleOtherTransfer.html"> Schedule Other Transfer </a></li>
-                                    <li><a href="ScheduleOtherBankTransfer.html"> Schedule Other Bank </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="Remittance.html">Remittance</a>
-                            </li>
-                            <li>
-                                <a href="BillPayment.html">Bill Payment</a>
-                            </li>
-                            <li>
-                                <a href="Topup.html">Top Up</a>
+                                <a href="#">Permission</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="TransactionHistory.html">Transaction History</a>
-                    </li>
-                    <li>
-                        <a href="OtherBankInfo.html">Other Bank Info</a>
-                    </li>
-                    <li>
-                        <a href="Feedback.html">Feedback</a>
-                    </li>
-                    <li>
-                        <a href="Calculator.html">Calculator</a>
-                    </li>
-                    <li>
-                        <a href="ExchangeRate.html">Exchange Rate</a>
-                    </li>
-                    <li>
-                        <a href="BranchesInfo.html">Branch</a>
-                    </li>
-                    <li>
-                        <a href="#settingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Setting</a>
-                        <ul class="collapse list-unstyled" id="settingSubmenu">
+                    <li class="active">
+                        <a href="#GeneralSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">General Setup</a>
+                        <ul class="collapse list-unstyled" id="GeneralSubMenu">
                             <li>
-                                <a href="ChangePassword.html">Change Login Password</a>
+                                <a href="#">Currency</a>
                             </li>
                             <li>
-                                <a href="ChangeTransactionPassword.html">Change Transaction Password</a>
+                                <a href="#">Branch</a>
                             </li>
                             <li>
-                                <a href="ChangeLanguage.html">Change Language</a>
+                                <a href="#">City</a>
                             </li>
                             <li>
-                                <a href="ResetPassword.html">Reset Password</a>
+                                <a href="#">Township</a>
                             </li>
                             <li>
-                                <a href="ResetEmail.html">Reset Email</a>
+                                <a href="#">Version</a>
                             </li>
-                            <!--                         <li>
-            <a href="CreateUserRole.html">Create User Role</a>
-        </li> -->
-                            <!--  <li>
-            <a href="#">Approve Transaction</a>
-        </li> -->
+                            <li>
+                                <a href="#">Rule</a>
+                            </li>
+                            <li>
+                                <a href="#">ADS Photo</a>
+                            </li>
+                            <li>
+                                <a href="#">Office Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Utility</a>
+                            </li>
+                            <li>
+                                <a href="#">Utility Detail</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Other Bank</a>
+                            </li>
+                            <li>
+                                <a href="#">Other Branch</a>
+                            </li>
+                            <li>
+                                <a href="#">Schedule Setup</a>
+                            </li>
+                            <li>
+                                <a href="#">Holiday</a>
+                            </li>
+
                         </ul>
                     </li>
-                    <li>
-                        <a href="Services.html">Services</a>
+                    <li class="active">
+                        <a href="#ProductServiceSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Products and Services</a>
+                        <ul class="collapse list-unstyled" id="ProductServiceSubMenu">
+                            <li>
+                                <a href="#">Account Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Account Service Desc</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="ContactUs.html">Contact Us</a>
+                    <li class="active">
+                        <a href="#RequestSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Request</a>
+                        <ul class="collapse list-unstyled" id="RequestSubMenu">
+                            <li>
+                                <a href="#">New Retail User</a>
+                            </li>
+                            <li>
+                                <a href="#">Requested User</a>
+                            </li>
+                            <li>
+                                <a href="#">User List</a>
+                            </li>
+                            <li>
+                                <a href="#">Requested Changes</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="HowToUse.html">How To Use</a>
+                    <li class="active">
+                        <a href="#ApproveSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Approve</a>
+                        <ul class="collapse list-unstyled" id="ApproveSubMenu">
+                            <li>
+                                <a href="#">Requested User</a>
+                            </li>
+                            <li>
+                                <a href="#">Requested Changes</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="../../RetailLogin.html">Logout</a>
+                    <li class="active">
+                        <a href="#InformationSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Information</a>
+                        <ul class="collapse list-unstyled" id="InformationSubMenu">
+                            <li>
+                                <a href="#">Feedback</a>
+                            </li>
+                            <li>
+                                <a href="#">Notification</a>
+                            </li>
+                            <li>
+                                <a href="#">SMS Allow</a>
+                            </li>
+                            <li>
+                                <a href="#">SMS Body</a>
+                            </li>
+                            <li>
+                                <a href="#">Email Template</a>
+                            </li>
+                            <li>
+                                <a href="#">How To Use</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#ReportSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reports</a>
+                        <ul class="collapse list-unstyled" id="ReportSubMenu">
+                            <li>
+                                <a href="#">User</a>
+                            </li>
+                            <li>
+                                <a href="#">Transfer Detail</a>
+                            </li>
+                            <li>
+                                <a href="#">Remittance</a>
+                            </li>
+                            <li>
+                                <a href="#">TopUp</a>
+                            </li>
+                            <li>
+                                <a href="#">Bill Payment</a>
+                            </li>
+                            <li>
+                                <a href="#">Feedback Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Transaction Summary</a>
+                            </li>
+                            <li>
+                                <a href="#">Utility Summary</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin Log</a>
+                            </li>
+                            <li>
+                                <a href="#">User Activity Log</a>
+                            </li>
+                            <li>
+                                <a href="#">Schedule Transfer Status</a>
+                            </li>
+                            <li>
+                                <a href="#">Schedule Transfer Log</a>
+                            </li>
+                            <li>
+                                <a href="#">Cron Log</a>
+                            </li>
+                            <li>
+                                <a href="#">Domestic Interbank Transfer</a>
+                            </li>
+                            <li>
+                                <a href="#">Schedule Payment</a>
+                            </li>
+                            <li>
+                                <a href="#">Corporate</a>
+                            </li>
+                            <li>
+                                <a href="#">Corporate User</a>
+                            </li>
+                            <li>
+                                <a href="#">Bulk Payment</a>
+                            </li>
+                            <li>
+                                <a href="#">Bulk Payment Detail</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#OtherBankSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Other Bank</a>
+                        <ul class="collapse list-unstyled" id="OtherBankSubmenu">
+                            <li>
+                                <a href="#">Own Bank Transaction(CCT)export</a>
+                            </li>
+                            <li>
+                                <a href="#">CCT Pending List</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="active">
+                        <a href="#CorRequestSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Corporate Request</a>
+                        <ul class="collapse list-unstyled" id="CorRequestSubMenu">
+                            <li>
+                                <a href="#">Request Corporate</a>
+                            </li>
+                            <li>
+                                <a href="#">Request List</a>
+                            </li>
+                            <li>
+                                <a href="#">Corporate List</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#CorRequestUserSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Corporate User Request</a>
+                        <ul class="collapse list-unstyled" id="CorRequestUserSubMenu">
+                            <li>
+                                <a href="#">Request Corporate User</a>
+                            </li>
+                            <li>
+                                <a href="#">Request User List</a>
+                            </li>
+                            <li>
+                                <a href="#">Request Changes List</a>
+                            </li>
+                            <li>
+                                <a href="#">Corporate User List</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#CorApproveSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Corporate Approve</a>
+                        <ul class="collapse list-unstyled" id="CorApproveSubMenu">
+                            <li>
+                                <a href="#">Pending Corporates</a>
+                            </li>
+                            <li>
+                                <a href="#">Pending Users</a>
+                            </li>
+                            <li>
+                                <a href="#">Pending User Changes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#CorGeneralMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Corporate General Setup</a>
+                        <ul class="collapse list-unstyled" id="CorGeneralMenu">
+                            <li>
+                                <a href="#">Country</a>
+                            </li>
+                            <li>
+                                <a href="#">State</a>
+                            </li>
+                            <li>
+                                <a href="#">Bulk File</a>
+                            </li>
+                            <li>
+                                <a href="#">Position</a>
+                            </li>
+                            <li>
+                                <a href="#">Department</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#RegisterApproveRuleSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Corporate Approve RuleList</a>
+                        <ul class="collapse list-unstyled" id="RegisterApproveRuleSubMenu">
+                            <li>
+                                <a href="#">Register Approve Rule</a>
+                            </li>
+                            <li>
+                                <a href="#">Requested Approve Rule List</a>
+                            </li>
+                            <li>
+                                <a href="#">Pending Approve Rule</a>
+                            </li>
+                            <li>
+                                <a href="#">Approve Rule List</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
 
                 <!--<div class="footer">
-<p>&lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-    &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;</p>
-</div>-->
+                <p>&lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                    &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;</p>
+                </div>-->
 
             </div>
         </nav>
@@ -161,7 +353,8 @@
                 </div>
                 <div class="row title-card card-stats">
                     <div class="row" style="margin: 10px;">
-                        <h3 style="color: #fff;font-weight: 700;margin-left: 10px;padding-top: 0px;">ACE Data Systems
+                        <h3 style="color: #fff;font-weight: 700;margin-left: 10px;padding-top: 0px;">
+                            ACE Data Systems
                         </h3>
                     </div>
                 </div>
